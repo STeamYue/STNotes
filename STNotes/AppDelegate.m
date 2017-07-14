@@ -17,8 +17,25 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self showMainTarBarC];
     return YES;
 }
+
+#pragma mark -TarBarC
+- (void)showMainTarBarC
+{
+    self.window.rootViewController = [self stMainTabBarC];
+}
+- (STMainTabBarC *)stMainTabBarC{
+    if (!_stMainTabBarC) {
+        STMainTabBarC *stMainTabBarC = [[STMainTabBarC alloc]init];
+        _stMainTabBarC = stMainTabBarC;
+    }
+    return _stMainTabBarC;
+}
+
+
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {

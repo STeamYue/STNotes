@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ThemeFoldingCell.h
 //  STNotes
 //
 //  Created by 岳克奎 on 2017/7/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ThemeFoldingCell : UITableViewCell
 
 @end
-
