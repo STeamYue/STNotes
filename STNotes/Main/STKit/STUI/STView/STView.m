@@ -14,6 +14,7 @@
     if (!_tableView) {
        _tableView = [[UITableView alloc]init];
         [self addSubview:_tableView];
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     }
     return _tableView;
 }
