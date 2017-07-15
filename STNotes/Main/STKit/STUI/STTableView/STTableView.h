@@ -9,5 +9,4 @@
 #import "STView.h"
 
 @interface STTableView : STView
-@property (nonatomic, strong) UITableView *tableView;
 @end

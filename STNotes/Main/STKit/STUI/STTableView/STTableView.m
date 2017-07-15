@@ -10,13 +10,4 @@
 
 @implementation STTableView
 
--(UITableView *)tableView{
-    if (!_tableView) {
-        UITableView *tableView = [[UITableView alloc]init];
-        [self addSubview:tableView];
-        _tableView = tableView;
-    }
-    return _tableView;
-}
-
 @end

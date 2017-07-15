@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface STView : UIView
-
+@property (nonatomic, strong) UITableView *tableView;
 @end

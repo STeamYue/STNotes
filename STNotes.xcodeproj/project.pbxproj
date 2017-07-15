@@ -19,12 +19,17 @@
 		9E9B51561F19096B0088F04C /* STView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B51551F19096B0088F04C /* STView.m */; };
 		9E9B51591F1909810088F04C /* STTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B51581F1909810088F04C /* STTableView.m */; };
 		9E9B515C1F190C6C0088F04C /* ThemeC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B515B1F190C6C0088F04C /* ThemeC.m */; };
-		9E9B51631F190CC10088F04C /* ThemeFoldingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B51611F190CC10088F04C /* ThemeFoldingCell.m */; };
-		9E9B51641F190CC10088F04C /* ThemeFoldingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E9B51621F190CC10088F04C /* ThemeFoldingCell.xib */; };
 		9E9B51691F190D470088F04C /* MyC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B51681F190D470088F04C /* MyC.m */; };
 		9E9B516C1F190D540088F04C /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B516B1F190D540088F04C /* MyView.m */; };
 		9E9B51711F19154F0088F04C /* ThemeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B51701F19154F0088F04C /* ThemeView.m */; };
 		9E9B51751F191B540088F04C /* MyProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B51741F191B540088F04C /* MyProtocol.m */; };
+		9E9B51791F19A8340088F04C /* ThemeProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B51781F19A8340088F04C /* ThemeProtocol.m */; };
+		9E9B517D1F19A9480088F04C /* ThemeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B517C1F19A9480088F04C /* ThemeModel.m */; };
+		9E9B51851F19AA880088F04C /* CCFoldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B51801F19AA880088F04C /* CCFoldCell.m */; };
+		9E9B51861F19AA880088F04C /* CCRotatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B51821F19AA880088F04C /* CCRotatedView.m */; };
+		9E9B51871F19AA880088F04C /* UIView+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B51841F19AA880088F04C /* UIView+Snapshot.m */; };
+		9E9B518F1F19DBB00088F04C /* ThemeFoldingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B518D1F19DBB00088F04C /* ThemeFoldingCell.m */; };
+		9E9B51901F19DBB00088F04C /* ThemeFoldingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E9B518E1F19DBB00088F04C /* ThemeFoldingCell.xib */; };
 		D5337C1ED3A87F7E8E6DF159 /* libPods-STNotes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 866CA5953DD1F175F8F09D2B /* libPods-STNotes.a */; };
 /* End PBXBuildFile section */
 
@@ -71,9 +76,6 @@
 		9E9B51581F1909810088F04C /* STTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STTableView.m; sourceTree = "<group>"; };
 		9E9B515A1F190C6C0088F04C /* ThemeC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeC.h; sourceTree = "<group>"; };
 		9E9B515B1F190C6C0088F04C /* ThemeC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeC.m; sourceTree = "<group>"; };
-		9E9B51601F190CC10088F04C /* ThemeFoldingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeFoldingCell.h; sourceTree = "<group>"; };
-		9E9B51611F190CC10088F04C /* ThemeFoldingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeFoldingCell.m; sourceTree = "<group>"; };
-		9E9B51621F190CC10088F04C /* ThemeFoldingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThemeFoldingCell.xib; sourceTree = "<group>"; };
 		9E9B51671F190D470088F04C /* MyC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyC.h; sourceTree = "<group>"; };
 		9E9B51681F190D470088F04C /* MyC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyC.m; sourceTree = "<group>"; };
 		9E9B516A1F190D540088F04C /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
@@ -83,6 +85,19 @@
 		9E9B51701F19154F0088F04C /* ThemeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeView.m; sourceTree = "<group>"; };
 		9E9B51731F191B540088F04C /* MyProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyProtocol.h; sourceTree = "<group>"; };
 		9E9B51741F191B540088F04C /* MyProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyProtocol.m; sourceTree = "<group>"; };
+		9E9B51771F19A8340088F04C /* ThemeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeProtocol.h; sourceTree = "<group>"; };
+		9E9B51781F19A8340088F04C /* ThemeProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeProtocol.m; sourceTree = "<group>"; };
+		9E9B517B1F19A9480088F04C /* ThemeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeModel.h; sourceTree = "<group>"; };
+		9E9B517C1F19A9480088F04C /* ThemeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeModel.m; sourceTree = "<group>"; };
+		9E9B517F1F19AA880088F04C /* CCFoldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCFoldCell.h; sourceTree = "<group>"; };
+		9E9B51801F19AA880088F04C /* CCFoldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCFoldCell.m; sourceTree = "<group>"; };
+		9E9B51811F19AA880088F04C /* CCRotatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRotatedView.h; sourceTree = "<group>"; };
+		9E9B51821F19AA880088F04C /* CCRotatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCRotatedView.m; sourceTree = "<group>"; };
+		9E9B51831F19AA880088F04C /* UIView+Snapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Snapshot.h"; sourceTree = "<group>"; };
+		9E9B51841F19AA880088F04C /* UIView+Snapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Snapshot.m"; sourceTree = "<group>"; };
+		9E9B518C1F19DBB00088F04C /* ThemeFoldingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeFoldingCell.h; sourceTree = "<group>"; };
+		9E9B518D1F19DBB00088F04C /* ThemeFoldingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeFoldingCell.m; sourceTree = "<group>"; };
+		9E9B518E1F19DBB00088F04C /* ThemeFoldingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThemeFoldingCell.xib; sourceTree = "<group>"; };
 		FAEA6E0ACDA127AA2E56A9D8 /* Pods-STNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STNotes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-STNotes/Pods-STNotes.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -225,6 +240,8 @@
 		9E9B51481F1907CE0088F04C /* Theme */ = {
 			isa = PBXGroup;
 			children = (
+				9E9B517A1F19A9360088F04C /* Model */,
+				9E9B51761F19A81E0088F04C /* Protocol */,
 				9E9B516E1F19154F0088F04C /* View */,
 				9E9B514B1F1908AC0088F04C /* Cell */,
 				9E9B514A1F19089B0088F04C /* ViewC */,
@@ -244,9 +261,9 @@
 		9E9B514B1F1908AC0088F04C /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				9E9B51601F190CC10088F04C /* ThemeFoldingCell.h */,
-				9E9B51611F190CC10088F04C /* ThemeFoldingCell.m */,
-				9E9B51621F190CC10088F04C /* ThemeFoldingCell.xib */,
+				9E9B518C1F19DBB00088F04C /* ThemeFoldingCell.h */,
+				9E9B518D1F19DBB00088F04C /* ThemeFoldingCell.m */,
+				9E9B518E1F19DBB00088F04C /* ThemeFoldingCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -262,6 +279,7 @@
 		9E9B514D1F1909120088F04C /* STUI */ = {
 			isa = PBXGroup;
 			children = (
+				9E9B517E1F19AA7D0088F04C /* STCFoldCell */,
 				9E9B514E1F1909300088F04C /* STTableView */,
 				9E9B514F1F1909300088F04C /* STViewC */,
 				9E9B51501F1909300088F04C /* STView */,
@@ -330,6 +348,37 @@
 				9E9B51741F191B540088F04C /* MyProtocol.m */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		9E9B51761F19A81E0088F04C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				9E9B51771F19A8340088F04C /* ThemeProtocol.h */,
+				9E9B51781F19A8340088F04C /* ThemeProtocol.m */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		9E9B517A1F19A9360088F04C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9E9B517B1F19A9480088F04C /* ThemeModel.h */,
+				9E9B517C1F19A9480088F04C /* ThemeModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9E9B517E1F19AA7D0088F04C /* STCFoldCell */ = {
+			isa = PBXGroup;
+			children = (
+				9E9B517F1F19AA880088F04C /* CCFoldCell.h */,
+				9E9B51801F19AA880088F04C /* CCFoldCell.m */,
+				9E9B51811F19AA880088F04C /* CCRotatedView.h */,
+				9E9B51821F19AA880088F04C /* CCRotatedView.m */,
+				9E9B51831F19AA880088F04C /* UIView+Snapshot.h */,
+				9E9B51841F19AA880088F04C /* UIView+Snapshot.m */,
+			);
+			path = STCFoldCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -447,7 +496,7 @@
 				9E9B511E1F18D1B70088F04C /* LaunchScreen.storyboard in Resources */,
 				9E9B511B1F18D1B70088F04C /* Assets.xcassets in Resources */,
 				9E9B51191F18D1B70088F04C /* Main.storyboard in Resources */,
-				9E9B51641F190CC10088F04C /* ThemeFoldingCell.xib in Resources */,
+				9E9B51901F19DBB00088F04C /* ThemeFoldingCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,16 +571,21 @@
 			files = (
 				9E9B51711F19154F0088F04C /* ThemeView.m in Sources */,
 				9E9B51691F190D470088F04C /* MyC.m in Sources */,
+				9E9B518F1F19DBB00088F04C /* ThemeFoldingCell.m in Sources */,
 				9E9B515C1F190C6C0088F04C /* ThemeC.m in Sources */,
 				9E9B51531F19094B0088F04C /* STViewC.m in Sources */,
 				9E9B51441F18F41B0088F04C /* STMainTabBarC.m in Sources */,
+				9E9B51791F19A8340088F04C /* ThemeProtocol.m in Sources */,
 				9E9B51131F18D1B70088F04C /* AppDelegate.m in Sources */,
 				9E9B51101F18D1B70088F04C /* main.m in Sources */,
 				9E9B51751F191B540088F04C /* MyProtocol.m in Sources */,
+				9E9B517D1F19A9480088F04C /* ThemeModel.m in Sources */,
+				9E9B51851F19AA880088F04C /* CCFoldCell.m in Sources */,
 				9E9B516C1F190D540088F04C /* MyView.m in Sources */,
 				9E9B51591F1909810088F04C /* STTableView.m in Sources */,
+				9E9B51871F19AA880088F04C /* UIView+Snapshot.m in Sources */,
 				9E9B51561F19096B0088F04C /* STView.m in Sources */,
-				9E9B51631F190CC10088F04C /* ThemeFoldingCell.m in Sources */,
+				9E9B51861F19AA880088F04C /* CCRotatedView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,12 +10,12 @@
 
 @implementation STView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (UITableView *)tableView{
+    if (!_tableView) {
+       _tableView = [[UITableView alloc]init];
+        [self addSubview:_tableView];
+    }
+    return _tableView;
 }
-*/
 
 @end
