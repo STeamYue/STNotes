@@ -30,6 +30,9 @@
 		9E9B51871F19AA880088F04C /* UIView+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B51841F19AA880088F04C /* UIView+Snapshot.m */; };
 		9E9B518F1F19DBB00088F04C /* ThemeFoldingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B518D1F19DBB00088F04C /* ThemeFoldingCell.m */; };
 		9E9B51901F19DBB00088F04C /* ThemeFoldingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E9B518E1F19DBB00088F04C /* ThemeFoldingCell.xib */; };
+		9E9B51971F1A11800088F04C /* BlogViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B51961F1A11800088F04C /* BlogViewC.m */; };
+		9E9B519A1F1A119B0088F04C /* BlogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B51991F1A119B0088F04C /* BlogView.m */; };
+		9E9B519D1F1A11B50088F04C /* BlogProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B519C1F1A11B50088F04C /* BlogProtocol.m */; };
 		D5337C1ED3A87F7E8E6DF159 /* libPods-STNotes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 866CA5953DD1F175F8F09D2B /* libPods-STNotes.a */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +101,12 @@
 		9E9B518C1F19DBB00088F04C /* ThemeFoldingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeFoldingCell.h; sourceTree = "<group>"; };
 		9E9B518D1F19DBB00088F04C /* ThemeFoldingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeFoldingCell.m; sourceTree = "<group>"; };
 		9E9B518E1F19DBB00088F04C /* ThemeFoldingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThemeFoldingCell.xib; sourceTree = "<group>"; };
+		9E9B51951F1A11800088F04C /* BlogViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogViewC.h; sourceTree = "<group>"; };
+		9E9B51961F1A11800088F04C /* BlogViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogViewC.m; sourceTree = "<group>"; };
+		9E9B51981F1A119B0088F04C /* BlogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogView.h; sourceTree = "<group>"; };
+		9E9B51991F1A119B0088F04C /* BlogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogView.m; sourceTree = "<group>"; };
+		9E9B519B1F1A11B50088F04C /* BlogProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogProtocol.h; sourceTree = "<group>"; };
+		9E9B519C1F1A11B50088F04C /* BlogProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogProtocol.m; sourceTree = "<group>"; };
 		FAEA6E0ACDA127AA2E56A9D8 /* Pods-STNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STNotes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-STNotes/Pods-STNotes.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -220,6 +229,7 @@
 		9E9B51451F18F5450088F04C /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				9E9B51911F1A10BC0088F04C /* Blog */,
 				9E9B514C1F1909010088F04C /* STKit */,
 				9E9B51481F1907CE0088F04C /* Theme */,
 				9E9B51471F1907B90088F04C /* My */,
@@ -379,6 +389,43 @@
 				9E9B51841F19AA880088F04C /* UIView+Snapshot.m */,
 			);
 			path = STCFoldCell;
+			sourceTree = "<group>";
+		};
+		9E9B51911F1A10BC0088F04C /* Blog */ = {
+			isa = PBXGroup;
+			children = (
+				9E9B51921F1A10F30088F04C /* Protocol */,
+				9E9B51931F1A10F30088F04C /* ViewC */,
+				9E9B51941F1A10F30088F04C /* View */,
+			);
+			path = Blog;
+			sourceTree = "<group>";
+		};
+		9E9B51921F1A10F30088F04C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				9E9B519B1F1A11B50088F04C /* BlogProtocol.h */,
+				9E9B519C1F1A11B50088F04C /* BlogProtocol.m */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		9E9B51931F1A10F30088F04C /* ViewC */ = {
+			isa = PBXGroup;
+			children = (
+				9E9B51951F1A11800088F04C /* BlogViewC.h */,
+				9E9B51961F1A11800088F04C /* BlogViewC.m */,
+			);
+			path = ViewC;
+			sourceTree = "<group>";
+		};
+		9E9B51941F1A10F30088F04C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9E9B51981F1A119B0088F04C /* BlogView.h */,
+				9E9B51991F1A119B0088F04C /* BlogView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -581,11 +628,14 @@
 				9E9B51751F191B540088F04C /* MyProtocol.m in Sources */,
 				9E9B517D1F19A9480088F04C /* ThemeModel.m in Sources */,
 				9E9B51851F19AA880088F04C /* CCFoldCell.m in Sources */,
+				9E9B51971F1A11800088F04C /* BlogViewC.m in Sources */,
 				9E9B516C1F190D540088F04C /* MyView.m in Sources */,
 				9E9B51591F1909810088F04C /* STTableView.m in Sources */,
+				9E9B519A1F1A119B0088F04C /* BlogView.m in Sources */,
 				9E9B51871F19AA880088F04C /* UIView+Snapshot.m in Sources */,
 				9E9B51561F19096B0088F04C /* STView.m in Sources */,
 				9E9B51861F19AA880088F04C /* CCRotatedView.m in Sources */,
+				9E9B519D1F1A11B50088F04C /* BlogProtocol.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

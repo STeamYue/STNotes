@@ -7,7 +7,7 @@
 //
 
 #import "STViewC.h"
-#import "ThemeView.h"
+@class ThemeView;
 @interface ThemeC : STViewC
 @property (nonatomic, strong) ThemeView *themeView;
 @end

@@ -26,7 +26,6 @@
 //                                forKeyPath:@"estimatedProgress"
 //                                   options:NSKeyValueObservingOptionNew
                                  //  context:nil];
-    
     //开始加载
     NSString *urlString = @"https://steamyue.github.io/";
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlString]];

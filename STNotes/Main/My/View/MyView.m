@@ -10,27 +10,15 @@
 #import "MyProtocol.h"
 #import <Masonry.h>
 @implementation MyView
-- (WKWebViewConfiguration *)wkConfig {
-    if (!_wkConfig) {
-        _wkConfig = [[WKWebViewConfiguration alloc] init];
-        _wkConfig.allowsInlineMediaPlayback = YES;
-        _wkConfig.allowsPictureInPictureMediaPlayback = YES;
-    }
-    return _wkConfig;
-}
-- (WKWebView *)wkWebView {
-    if (!_wkWebView)
-    {
-        _wkWebView = [[WKWebView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width,  [UIScreen mainScreen].bounds.size.height)
-                                       configuration:[self wkConfig]];
-        [self addSubview:_wkWebView];
-        [_wkWebView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.edges.equalTo(self);
-        }];
-        _wkWebView.navigationDelegate = [self protocol];
-        _wkWebView.UIDelegate = [self protocol];
-    }
-    return _wkWebView;
+
+- (void)layoutSubviews{
+    [super layoutSubviews];
+    //设置代理回调
+    [[self wkWebView] mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self);
+    }];
+    self.wkWebView.navigationDelegate = [self protocol];
+    self.wkWebView.UIDelegate = self.protocol;
 }
 - (MyProtocol *)protocol{
     if (!_protocol)
@@ -40,18 +28,5 @@
     }
     return _protocol;
     
-}
-- (UIProgressView *)progressView{
-    if (!_progressView) {
-        UIProgressView *progressView = [[UIProgressView alloc]init];
-        progressView.backgroundColor = [UIColor blueColor];
-        [self addSubview:progressView];
-        [progressView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.top.right.equalTo(self);
-            make.width.equalTo(@1);
-        }];
-        _progressView = progressView;
-    }
-    return _progressView;
 }
 @end

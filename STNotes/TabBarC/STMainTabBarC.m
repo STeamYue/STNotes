@@ -75,6 +75,7 @@ shouldSelectViewController:(UIViewController *)viewController{
     if(!_themeC)
     {
         ThemeC *themeC = [[ThemeC alloc]init];
+        themeC.tabBarC = self;
         _themeC = themeC;
     }
     return _themeC;
@@ -91,6 +92,7 @@ shouldSelectViewController:(UIViewController *)viewController{
     if (!_myC)
     {
         MyC *myC =[[MyC alloc]init];
+        myC.tabBarC = self;
         _myC = myC;
     }
     return _myC;

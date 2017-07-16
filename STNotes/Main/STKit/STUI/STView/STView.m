@@ -7,7 +7,7 @@
 //
 
 #import "STView.h"
-
+#import <Masonry.h>
 @implementation STView
 
 - (UITableView *)tableView{
@@ -18,5 +18,34 @@
     }
     return _tableView;
 }
-
+- (WKWebViewConfiguration *)wkConfig {
+    if (!_wkConfig) {
+        _wkConfig = [[WKWebViewConfiguration alloc] init];
+        _wkConfig.allowsInlineMediaPlayback = YES;
+        _wkConfig.allowsPictureInPictureMediaPlayback = YES;
+    }
+    return _wkConfig;
+}
+- (WKWebView *)wkWebView {
+    if (!_wkWebView)
+    {
+        _wkWebView = [[WKWebView alloc]initWithFrame:CGRectMake(0, 0,0,0)
+                                       configuration:[self wkConfig]];
+        [self addSubview:_wkWebView];
+    }
+    return _wkWebView;
+}
+- (UIProgressView *)progressView{
+    if (!_progressView) {
+        UIProgressView *progressView = [[UIProgressView alloc]init];
+        progressView.backgroundColor = [UIColor blueColor];
+        [self addSubview:progressView];
+        [progressView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.top.right.equalTo(self);
+            make.width.equalTo(@1);
+        }];
+        _progressView = progressView;
+    }
+    return _progressView;
+}
 @end

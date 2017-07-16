@@ -8,6 +8,8 @@
 
 #import "STView.h"
 @class ThemeProtocol;
+@class ThemeC;
 @interface ThemeView : STView
 @property (nonatomic, strong)ThemeProtocol *protocol;
+@property (nonatomic, strong)ThemeC        *themeC;
 @end

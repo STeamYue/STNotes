@@ -8,6 +8,7 @@
 
 #import "ThemeC.h"
 #import <Masonry.h>
+#import "ThemeView.h"
 @interface ThemeC ()
 
 @end
@@ -25,13 +26,14 @@
     [[self themeView] mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
     }];
+    self.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
 }
-
 - (ThemeView *)themeView{
     if (!_themeView) {
         ThemeView *themeView = [[ThemeView alloc]init];
-        themeView.backgroundColor = [UIColor redColor];
+        themeView.backgroundColor = [UIColor groupTableViewBackgroundColor];
         [self.view addSubview:themeView];
+        themeView.themeC = self;
         _themeView = themeView;
     }
     return _themeView;

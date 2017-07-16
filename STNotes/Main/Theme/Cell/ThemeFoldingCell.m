@@ -24,5 +24,13 @@
     NSArray<NSNumber *> *array = @[@(0.5f),@(.25f),@(.25f)];
     return array[itemIndex].doubleValue;
 }
-
+- (void)setThemeFoldingCellDelegate:(id<ThemeFoldingCellDelegate>)themeFoldingCellDelegate{
+    _themeFoldingCellDelegate = themeFoldingCellDelegate;
+}
+- (IBAction)show_themeDetailBtnClick:(UIButton *)sender {
+    if (_themeFoldingCellDelegate && [_themeFoldingCellDelegate respondsToSelector:@selector(show_ThemeFoldingCell:opneBlogBtn:)]) {
+        [_themeFoldingCellDelegate show_ThemeFoldingCell:self
+                                             opneBlogBtn:sender];
+    }
+}
 @end

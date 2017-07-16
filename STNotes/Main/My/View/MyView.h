@@ -7,11 +7,8 @@
 //
 
 #import "STView.h"
-#import <WebKit/WebKit.h>
 @class MyProtocol;
 @interface MyView : STView
-@property (nonatomic, strong) WKWebViewConfiguration *wkConfig;
-@property (nonatomic, strong) WKWebView              *wkWebView;
+
 @property (nonatomic, strong) MyProtocol             *protocol;
-@property (nonatomic, strong) UIProgressView         *progressView;
 @end

@@ -18,14 +18,15 @@
     [[self tableView] mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self);
     }];
+    self.tableView.backgroundColor = [UIColor groupTableViewBackgroundColor];
     [self.tableView registerNib:[UINib nibWithNibName:[NSString stringWithFormat:@"%@", ([ThemeFoldingCell class])] bundle:nil] forCellReuseIdentifier:NSStringFromClass([ThemeFoldingCell class])];
     self.tableView.delegate = self.protocol;
     self.tableView.dataSource = self.protocol;
-    
 }
 - (ThemeProtocol *)protocol{
     if (!_protocol) {
         _protocol = [[ThemeProtocol alloc]init];
+        _protocol.themeView = self;
     }
     return _protocol;
 }

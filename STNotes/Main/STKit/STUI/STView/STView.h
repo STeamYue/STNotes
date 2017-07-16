@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <WebKit/WebKit.h>
 @interface STView : UIView
-@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) UITableView            *tableView;
+@property (nonatomic, strong) WKWebViewConfiguration *wkConfig;
+@property (nonatomic, strong) WKWebView              *wkWebView;
+@property (nonatomic, strong) UIProgressView         *progressView;
 @end

@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface STViewC : UIViewController
-
+@property (nonatomic, strong) UITabBarController *tabBarC;
 @end
