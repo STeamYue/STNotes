@@ -23,20 +23,20 @@
 - (void)show_Subs{
     
     UINavigationController *plusNavC = [[UINavigationController alloc] initWithRootViewController:[UIViewController new]];
-    self.viewControllers = @[[self themeNavC],plusNavC,[self myNavC]];
+    self.viewControllers = @[[self themeNavC],[self myNavC]];
     UITabBarItem *themItem = [self.tabBar.items objectAtIndex:0];
     [self showTabBarItem:themItem
               itemImgStr:@"select"
         selectItemImgStr:@"un_select"
             itemTitleStr:@"主题"];
-    UITabBarItem *plusItem = [self.tabBar.items objectAtIndex:1];
-    [self showTabBarItem:plusItem
-              itemImgStr:@"select"
-        selectItemImgStr:@"un_select"
-            itemTitleStr:@"中间"];
+//    UITabBarItem *plusItem = [self.tabBar.items objectAtIndex:1];
+//    [self showTabBarItem:plusItem
+//              itemImgStr:@"select"
+//        selectItemImgStr:@"un_select"
+//            itemTitleStr:@"中间"];
     
     
-    UITabBarItem *myItem = [self.tabBar.items objectAtIndex:2];
+    UITabBarItem *myItem = [self.tabBar.items objectAtIndex:1];
     [self showTabBarItem:myItem
               itemImgStr:@"select"
         selectItemImgStr:@"un_select"
@@ -64,11 +64,12 @@
 - (BOOL)tabBarController:(UITabBarController *)tabBarController
 shouldSelectViewController:(UIViewController *)viewController{
     //找到选择索引
-    NSInteger index = [tabBarController.viewControllers indexOfObject:viewController];
-    if(index == 1){
-        //弹出  菜单界面
-        return NO;//iteam 不响应TabBatC的select事件
-    }
+   
+//NSInteger index = [tabBarController.viewControllers indexOfObject:viewController];
+//    if(index == 1){
+//        //弹出  菜单界面
+//        return NO;//iteam 不响应TabBatC的select事件
+//    }
     return YES;
 }
 - (ThemeC *)themeC{

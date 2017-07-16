@@ -14,7 +14,7 @@
 #import "BlogView.h"
 #define kCloseCellHeight    179.f
 #define kOpenCellHeight     488.f
-#define kRowsCount          10
+#define kRowsCount          1
 @implementation ThemeProtocol
 
 

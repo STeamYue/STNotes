@@ -8,7 +8,7 @@
 //
 
 #import "STViewC.h"
-
+#import "MBManager.h"
 @interface STViewC ()
 
 @end
@@ -34,5 +34,8 @@
     // Pass the selected object to the new view controller.
 }
 */
-
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    [MBManager hideAlert];
+}
 @end
