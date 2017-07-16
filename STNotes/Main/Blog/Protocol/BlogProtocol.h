@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface BlogProtocol : NSObject
-
+#import <WebKit/WebKit.h>
+@interface BlogProtocol : NSObject <WKUIDelegate,WKNavigationDelegate>
 @end

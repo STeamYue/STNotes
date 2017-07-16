@@ -11,7 +11,13 @@
 @implementation ThemeModel
 +(NSMutableArray *)show_getThemeModelMArray{
     
-    NSMutableDictionary *dic = @{}.mutableCopy;
+    NSMutableArray *array = @[
+                            @{@"themeTitle"      :@"ReactNative",
+                              @"headerImgUrl"    :@"http://&&58%%%%.com",
+                              @"themeMark"       :@[@"iOS",@"RN"],
+                              @"nameStr"         :@"胜利女神在微笑",
+                              @"signatureContent":@""
+                                  },@{}].mutableCopy;
     
     
     return nil;

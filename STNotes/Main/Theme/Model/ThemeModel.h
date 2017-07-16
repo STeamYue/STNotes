@@ -9,13 +9,11 @@
 #import <Foundation/Foundation.h>
 
 @interface ThemeModel : NSObject
-@property (nonatomic, strong) NSString *themeTitle;//主题方向   ReactNative
-@property (nonatomic, strong) NSString *themeDirction;//主题方向  RN学习资料/RN学习笔记
-@property (nonatomic, strong) NSString *nameStr;      //姓名
-@property (nonatomic, strong) NSString *numberStr;    //序列号
-
-//@property (nonatomic, strong) NSString *nameStr;      //姓名
-//@property (nonatomic, strong) NSString *nameStr;      //姓名
-//@property (nonatomic, strong) NSString *nameStr;      //姓名
-//@property (nonatomic, strong) NSString *nameStr;      //姓名
+@property (nonatomic, strong) NSString       *themeTitle;       //主题标题方向     ReactNative
+@property (nonatomic, strong) NSString       *headerImgUrl;     //个人人头像
+@property (nonatomic, strong) NSMutableArray *markMArray;        //个人标签
+@property (nonatomic, strong) NSString       *nameStr;          //姓名
+@property (nonatomic, strong) NSString       *signatureContent; //签名内容
+@property (nonatomic, strong) NSMutableArray *blogMArray;       //最低3个博客样例 名称
+@property (nonatomic, strong) NSString       *blogMianUrlStr;   //博客地址
 @end

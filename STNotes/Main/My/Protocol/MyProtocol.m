@@ -7,7 +7,7 @@
 //
 
 #import "MyProtocol.h"
-
+#import "MBManager.h"
 @interface MyProtocol ()
 
 @end
@@ -21,16 +21,19 @@
  */
 //开始加载
 - (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation {
-    
+    [MBManager showLoading];
 }
 //加载完成
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation {
+    [MBManager hideAlert];
 }
 //加载失败
 - (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(WKNavigation *)navigation withError:(NSError *)error {
+    [MBManager hideAlert];
 }
 //页面跳转
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler {
+    [MBManager hideAlert];
     //允许页面跳转
     NSLog(@"%@",navigationAction.request.URL);
     decisionHandler(WKNavigationActionPolicyAllow);

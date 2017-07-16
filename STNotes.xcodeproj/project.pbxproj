@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E60FB651F1B0CD200DD9CAB /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E60FB641F1B0CD200DD9CAB /* MBProgressHUD.m */; };
+		9E60FB681F1B0CDD00DD9CAB /* MBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E60FB671F1B0CDD00DD9CAB /* MBManager.m */; };
 		9E9B51101F18D1B70088F04C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B510F1F18D1B70088F04C /* main.m */; };
 		9E9B51131F18D1B70088F04C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B51121F18D1B70088F04C /* AppDelegate.m */; };
 		9E9B51191F18D1B70088F04C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E9B51171F18D1B70088F04C /* Main.storyboard */; };
@@ -56,6 +58,10 @@
 /* Begin PBXFileReference section */
 		834B165058B4EA5CC95AC931 /* Pods-STNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STNotes.release.xcconfig"; path = "Pods/Target Support Files/Pods-STNotes/Pods-STNotes.release.xcconfig"; sourceTree = "<group>"; };
 		866CA5953DD1F175F8F09D2B /* libPods-STNotes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-STNotes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E60FB631F1B0CD200DD9CAB /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		9E60FB641F1B0CD200DD9CAB /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		9E60FB661F1B0CDD00DD9CAB /* MBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBManager.h; sourceTree = "<group>"; };
+		9E60FB671F1B0CDD00DD9CAB /* MBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBManager.m; sourceTree = "<group>"; };
 		9E9B510B1F18D1B70088F04C /* STNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E9B510F1F18D1B70088F04C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9E9B51111F18D1B70088F04C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -151,6 +157,17 @@
 				866CA5953DD1F175F8F09D2B /* libPods-STNotes.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E60FB621F1B0CC300DD9CAB /* STMBHub */ = {
+			isa = PBXGroup;
+			children = (
+				9E60FB661F1B0CDD00DD9CAB /* MBManager.h */,
+				9E60FB671F1B0CDD00DD9CAB /* MBManager.m */,
+				9E60FB631F1B0CD200DD9CAB /* MBProgressHUD.h */,
+				9E60FB641F1B0CD200DD9CAB /* MBProgressHUD.m */,
+			);
+			path = STMBHub;
 			sourceTree = "<group>";
 		};
 		9E9B51021F18D1B70088F04C = {
@@ -289,6 +306,7 @@
 		9E9B514D1F1909120088F04C /* STUI */ = {
 			isa = PBXGroup;
 			children = (
+				9E60FB621F1B0CC300DD9CAB /* STMBHub */,
 				9E9B517E1F19AA7D0088F04C /* STCFoldCell */,
 				9E9B514E1F1909300088F04C /* STTableView */,
 				9E9B514F1F1909300088F04C /* STViewC */,
@@ -629,6 +647,8 @@
 				9E9B517D1F19A9480088F04C /* ThemeModel.m in Sources */,
 				9E9B51851F19AA880088F04C /* CCFoldCell.m in Sources */,
 				9E9B51971F1A11800088F04C /* BlogViewC.m in Sources */,
+				9E60FB651F1B0CD200DD9CAB /* MBProgressHUD.m in Sources */,
+				9E60FB681F1B0CDD00DD9CAB /* MBManager.m in Sources */,
 				9E9B516C1F190D540088F04C /* MyView.m in Sources */,
 				9E9B51591F1909810088F04C /* STTableView.m in Sources */,
 				9E9B519A1F1A119B0088F04C /* BlogView.m in Sources */,
