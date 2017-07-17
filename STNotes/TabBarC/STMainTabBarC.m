@@ -26,8 +26,8 @@
     self.viewControllers = @[[self themeNavC],[self myNavC]];
     UITabBarItem *themItem = [self.tabBar.items objectAtIndex:0];
     [self showTabBarItem:themItem
-              itemImgStr:@"select"
-        selectItemImgStr:@"un_select"
+              itemImgStr:@"tabBar_theme_un_select"
+        selectItemImgStr:@"tabBar_theme_select"
             itemTitleStr:@"主题"];
 //    UITabBarItem *plusItem = [self.tabBar.items objectAtIndex:1];
 //    [self showTabBarItem:plusItem
@@ -38,8 +38,8 @@
     
     UITabBarItem *myItem = [self.tabBar.items objectAtIndex:1];
     [self showTabBarItem:myItem
-              itemImgStr:@"select"
-        selectItemImgStr:@"un_select"
+              itemImgStr:@"tabBar_my_un_select"
+        selectItemImgStr:@"tabBar_my_select"
             itemTitleStr:@"我的"];
     UITabBarItem* item = [UITabBarItem appearance];
     [item setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor redColor]} forState:UIControlStateSelected];
